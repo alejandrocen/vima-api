@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package vima;
+
+message ConfigObject {
+    string id = 1;
+    string key = 2;
+    string value = 3;
+    bool is_public = 4;
+    string created_at = 5;
+    string updated_at = 6;
+}
+
+message ConfigCreateRequest {
+    string key = 1;
+    string value = 2;
+    bool is_public = 3;
+}
+
+message ConfigCreateResponse {
+    string id = 1;
+    string key = 2;
+    string value = 3;
+    bool is_public = 4;
+    string created_at = 5;
+    string updated_at = 6;
+}
+
+message ConfigIndexRequest {}
+
+message ConfigIndexResponse {
+    repeated ConfigObject configs = 1;
+}
+
+service Configs {
+    rpc Create (ConfigCreateRequest) returns (ConfigCreateResponse);
+    rpc Index (ConfigIndexRequest) returns (ConfigIndexResponse);
+}

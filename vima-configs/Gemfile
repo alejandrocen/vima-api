@@ -6,6 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.2'
 
 gem 'bootsnap', require: false
+gem 'dry-rails', '~> 0.5.0'
 gem 'gruf', '~> 2.16'
 gem 'pg', '~> 1.4'
 gem 'puma', '~> 5.0'
@@ -14,7 +15,7 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'vima-protos', path: '../vima-protos-ruby'
 
 group :development, :test do
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'byebug', '~> 11.1'
   gem 'dotenv-rails', '~> 2.8'
 end
 

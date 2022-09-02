@@ -7,6 +7,7 @@ ruby '3.1.2'
 
 gem 'bootsnap', require: false
 gem 'gruf', '~> 2.16'
+gem 'pg', '~> 1.4'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
@@ -14,6 +15,7 @@ gem 'vima-protos', path: '../vima-protos-ruby'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'dotenv-rails', '~> 2.8'
 end
 
 group :development do

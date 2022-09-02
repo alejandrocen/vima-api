@@ -1,4 +1,4 @@
-# Vima protos
+# Vima protos for Ruby
 
 This gem contains protos and gRPC services for Vima.
 
@@ -7,7 +7,7 @@ This gem contains protos and gRPC services for Vima.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'vima-protos', path: 'vima-protos-ruby'
+gem 'vima-protos', path: '../vima-protos-ruby'
 ```
 
 And then execute:

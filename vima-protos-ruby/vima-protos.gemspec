@@ -3,6 +3,9 @@
 lib = File.expand_path 'lib', __dir__
 $LOAD_PATH.unshift lib unless $LOAD_PATH.include? lib
 
+require 'vima_pb'
+require 'vima_services_pb'
+
 Gem::Specification.new do |spec|
   spec.name = 'vima-protos'
   spec.version = '0.0.1'

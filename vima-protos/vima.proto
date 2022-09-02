@@ -32,7 +32,12 @@ message ConfigIndexResponse {
     repeated ConfigObject configs = 1;
 }
 
+message ConfigFindRequest {
+    string id = 1;
+}
+
 service Configs {
     rpc Create (ConfigCreateRequest) returns (ConfigCreateResponse);
     rpc Index (ConfigIndexRequest) returns (ConfigIndexResponse);
+    rpc Find (ConfigFindRequest) returns (ConfigObject);
 }

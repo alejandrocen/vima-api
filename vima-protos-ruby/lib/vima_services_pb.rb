@@ -16,6 +16,7 @@ module Vima
 
       rpc :Create, ::Vima::ConfigCreateRequest, ::Vima::ConfigCreateResponse
       rpc :Index, ::Vima::ConfigIndexRequest, ::Vima::ConfigIndexResponse
+      rpc :Find, ::Vima::ConfigFindRequest, ::Vima::ConfigObject
     end
 
     Stub = Service.rpc_stub_class

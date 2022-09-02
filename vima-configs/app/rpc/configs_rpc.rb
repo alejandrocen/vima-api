@@ -9,4 +9,11 @@ class ConfigsRpc < ApplicationRpc
     configs = @repository.search
     Vima::ConfigIndexResponse.new(configs: configs)
   end
+
+  def find
+    id = request.message.id
+    config = @repository.find(id)
+    fail!(:not_found, :config_not_found, 'Not found') unless config
+    Vima::ConfigObject.new(config.as_json)
+  end
 end

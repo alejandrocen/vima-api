@@ -255,15 +255,15 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  byebug (~> 11.1)
-  dotenv-rails (~> 2.8)
+  byebug
+  dotenv-rails
   dry-rails (~> 0.5.0)
   gruf (~> 2.16)
   pg (~> 1.4)
   puma (~> 5.0)
   rails (~> 7.0.3, >= 7.0.3.1)
-  rubocop (~> 1.36)
-  rubocop-rails (~> 2.15)
+  rubocop
+  rubocop-rails
   tzinfo-data
   vima-protos!
 

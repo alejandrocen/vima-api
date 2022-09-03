@@ -16,10 +16,10 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'vima-protos', path: '../vima-protos-ruby'
 
 group :development, :test do
-  gem 'byebug', '~> 11.1'
+  gem 'byebug'
 end
 
 group :development do
-  gem 'rubocop', '~> 1.36', require: false
-  gem 'rubocop-rails', '~> 2.15', require: false
+  gem 'rubocop', require: false
+  gem 'rubocop-rails', require: false
 end

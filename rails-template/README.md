@@ -1,6 +1,6 @@
 # Rails template
 
-This is the application template that I recommend for Rails 7 projects.
+This is the application template recommend for Rails projects.
 
 ## Usage
 

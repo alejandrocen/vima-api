@@ -11,7 +11,7 @@ end
 
 after_bundle do
   template 'config/database.yml', force: true if postgresql_template?
-  template 'rubocop.yml.tt', '.rubocop.yml'
+  template '.rubocop.yml'
   run 'touch .rubocop_todo.yml'
   run 'rm -rf .git'
   run 'bundle exec rubocop -A'

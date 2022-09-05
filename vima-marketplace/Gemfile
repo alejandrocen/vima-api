@@ -6,7 +6,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.2'
 
 gem 'bootsnap', require: false
-gem 'dry-monads', '~> 1.4'
 gem 'dry-rails', '~> 0.5.0'
 gem 'gruf', '~> 2.16'
 gem 'jbuilder', '~> 2.11'

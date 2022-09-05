@@ -8,5 +8,8 @@ class ConfigRepositoryRpc
   def find(id)
     response = @client.call(:Find, id: id)
     response.message
+  rescue Gruf::Client::Error
+    # TODO: Handle errors
+    nil
   end
 end

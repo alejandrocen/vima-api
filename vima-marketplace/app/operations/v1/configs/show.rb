@@ -2,7 +2,7 @@
 
 module V1
   module Configs
-    class Finder
+    class Show
       include VimaMarketplace::Deps[repository: 'config_repository_rpc']
 
       def call(params = {})

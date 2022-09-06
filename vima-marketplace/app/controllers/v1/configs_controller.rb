@@ -7,7 +7,7 @@ module V1
     end
 
     def show
-      @config = resolve('v1.configs.finder').call(safe_params.to_h)
+      @config = resolve('v1.configs.show').call(safe_params.to_h)
     end
 
     private

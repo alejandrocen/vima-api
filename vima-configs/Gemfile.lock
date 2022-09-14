@@ -1,7 +1,7 @@
 PATH
   remote: ../vima-protos-ruby
   specs:
-    vima-protos (0.0.1)
+    vima-protos (1.0.0)
       grpc (~> 1.48)
 
 GEM

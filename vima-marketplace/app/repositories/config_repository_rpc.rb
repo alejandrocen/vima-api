@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'vima_services_pb'
+
 class ConfigRepositoryRpc
   include ConfigRepository
 
@@ -17,4 +19,6 @@ class ConfigRepositoryRpc
   def search
     @client.call(:Search).message
   end
+
+  def save; end
 end

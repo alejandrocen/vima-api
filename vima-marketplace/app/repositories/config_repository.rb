@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
+require 'vima_common/interface'
+
 module ConfigRepository
-  extend Interface
+  extend VimaCommon::Interface
 
   method :find
   method :search

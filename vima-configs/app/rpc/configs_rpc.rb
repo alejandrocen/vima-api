@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'vima_services_pb'
+
 class ConfigsRpc < ApplicationRpc
   include VimaConfigs::Deps[repository: 'config_repository_pg']
 

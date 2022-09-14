@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    vima-common (1.0.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  vima-common!
+
+BUNDLED WITH
+   2.3.21

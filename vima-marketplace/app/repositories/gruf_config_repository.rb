@@ -2,7 +2,7 @@
 
 require 'vima_services_pb'
 
-class ConfigRepositoryRpc
+class GrufConfigRepository
   include ConfigRepository
 
   def initialize

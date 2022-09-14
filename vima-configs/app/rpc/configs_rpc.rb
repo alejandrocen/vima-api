@@ -3,7 +3,7 @@
 require 'vima_services_pb'
 
 class ConfigsRpc < ApplicationRpc
-  include VimaConfigs::Deps[repository: 'config_repository_pg']
+  include VimaConfigs::Deps[repository: 'active_record_config_repository']
 
   bind Vima::Configs::Service
 

@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-class ConfigRepositoryPg
+class ActiveRecordConfigRepository
+  include ConfigRepository
+
   def search(_criteria = nil)
     Config.all.as_json
   end

@@ -3,7 +3,7 @@
 module V1
   module Configs
     class Show
-      include VimaMarketplace::Deps[repository: 'config_repository_rpc']
+      include VimaMarketplace::Deps[repository: 'gruf_config_repository']
 
       def call(params = {})
         config_id = params[:id]

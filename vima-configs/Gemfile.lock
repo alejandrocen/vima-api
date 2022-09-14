@@ -1,4 +1,9 @@
 PATH
+  remote: ../vima-common
+  specs:
+    vima-common (1.0.0)
+
+PATH
   remote: ../vima-protos-ruby
   specs:
     vima-protos (1.0.0)
@@ -265,6 +270,7 @@ DEPENDENCIES
   rubocop
   rubocop-rails
   tzinfo-data
+  vima-common!
   vima-protos!
 
 RUBY VERSION

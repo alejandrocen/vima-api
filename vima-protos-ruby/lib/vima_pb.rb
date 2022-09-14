@@ -13,12 +13,12 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       optional :created_at, :string, 5
       optional :updated_at, :string, 6
     end
-    add_message "vima.ConfigCreateRequest" do
+    add_message "vima.ConfigSaveRequest" do
       optional :key, :string, 1
       optional :value, :string, 2
       optional :is_public, :bool, 3
     end
-    add_message "vima.ConfigCreateResponse" do
+    add_message "vima.ConfigSaveResponse" do
       optional :id, :string, 1
       optional :key, :string, 2
       optional :value, :string, 3
@@ -26,9 +26,9 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       optional :created_at, :string, 5
       optional :updated_at, :string, 6
     end
-    add_message "vima.ConfigIndexRequest" do
+    add_message "vima.ConfigSearchRequest" do
     end
-    add_message "vima.ConfigIndexResponse" do
+    add_message "vima.ConfigSearchResponse" do
       repeated :configs, :message, 1, "vima.ConfigObject"
     end
     add_message "vima.ConfigFindRequest" do
@@ -39,9 +39,9 @@ end
 
 module Vima
   ConfigObject = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("vima.ConfigObject").msgclass
-  ConfigCreateRequest = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("vima.ConfigCreateRequest").msgclass
-  ConfigCreateResponse = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("vima.ConfigCreateResponse").msgclass
-  ConfigIndexRequest = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("vima.ConfigIndexRequest").msgclass
-  ConfigIndexResponse = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("vima.ConfigIndexResponse").msgclass
+  ConfigSaveRequest = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("vima.ConfigSaveRequest").msgclass
+  ConfigSaveResponse = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("vima.ConfigSaveResponse").msgclass
+  ConfigSearchRequest = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("vima.ConfigSearchRequest").msgclass
+  ConfigSearchResponse = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("vima.ConfigSearchResponse").msgclass
   ConfigFindRequest = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("vima.ConfigFindRequest").msgclass
 end

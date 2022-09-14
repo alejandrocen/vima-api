@@ -5,9 +5,9 @@ class ConfigsRpc < ApplicationRpc
 
   bind Vima::Configs::Service
 
-  def index
+  def search
     configs = @repository.search
-    Vima::ConfigIndexResponse.new(configs: configs)
+    Vima::ConfigSearchResponse.new(configs: configs)
   end
 
   def find

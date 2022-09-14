@@ -10,6 +10,10 @@ module V1
       @config = resolve('v1.configs.show').call(safe_params.to_h)
     end
 
+    def index
+      @configs = resolve('v1.configs.index').call
+    end
+
     private
 
     def exceptions

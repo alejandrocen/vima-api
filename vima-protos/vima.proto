@@ -11,13 +11,13 @@ message ConfigObject {
     string updated_at = 6;
 }
 
-message ConfigCreateRequest {
+message ConfigSaveRequest {
     string key = 1;
     string value = 2;
     bool is_public = 3;
 }
 
-message ConfigCreateResponse {
+message ConfigSaveResponse {
     string id = 1;
     string key = 2;
     string value = 3;
@@ -26,9 +26,9 @@ message ConfigCreateResponse {
     string updated_at = 6;
 }
 
-message ConfigIndexRequest {}
+message ConfigSearchRequest {}
 
-message ConfigIndexResponse {
+message ConfigSearchResponse {
     repeated ConfigObject configs = 1;
 }
 
@@ -37,7 +37,7 @@ message ConfigFindRequest {
 }
 
 service Configs {
-    rpc Create (ConfigCreateRequest) returns (ConfigCreateResponse);
-    rpc Index (ConfigIndexRequest) returns (ConfigIndexResponse);
+    rpc Save (ConfigSaveRequest) returns (ConfigSaveResponse);
+    rpc Search (ConfigSearchRequest) returns (ConfigSearchResponse);
     rpc Find (ConfigFindRequest) returns (ConfigObject);
 }

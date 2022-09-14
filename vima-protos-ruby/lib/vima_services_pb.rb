@@ -14,8 +14,8 @@ module Vima
       self.unmarshal_class_method = :decode
       self.service_name = 'vima.Configs'
 
-      rpc :Create, ::Vima::ConfigCreateRequest, ::Vima::ConfigCreateResponse
-      rpc :Index, ::Vima::ConfigIndexRequest, ::Vima::ConfigIndexResponse
+      rpc :Save, ::Vima::ConfigSaveRequest, ::Vima::ConfigSaveResponse
+      rpc :Search, ::Vima::ConfigSearchRequest, ::Vima::ConfigSearchResponse
       rpc :Find, ::Vima::ConfigFindRequest, ::Vima::ConfigObject
     end
 

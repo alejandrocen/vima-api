@@ -6,4 +6,4 @@ This is the application template recommend for Rails projects.
 
 To generate a Rails application using this template, pass the `-m` option to `rails new`, like this:
 
-    $ rails new APP_PATH -m rails-template/template.rb
+    $ rails new APP_PATH -m vima-common/rails-template/template.rb

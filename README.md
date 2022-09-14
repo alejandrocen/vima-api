@@ -24,11 +24,11 @@ Probably needs update bundler:
 
 Generate minimal Rails application for gRPC service with ActiveRecord and PostgreSQL:
 
-    $ rails new APP_PATH --api -MCT --skip-active-storage --skip-active-job --database=postgresql -m rails-template/template.rb
+    $ rails new APP_PATH --api -MCT --skip-active-storage --skip-active-job --database=postgresql -m vima-common/rails-template/template.rb
 
 Generate minimal Rails application for REST API:
 
-    $ rails new APP_PATH --api -MOCT --skip-active-storage --skip-active-job -m rails-template/template.rb
+    $ rails new APP_PATH --api -MOCT --skip-active-storage --skip-active-job -m vima-common/rails-template/template.rb
 
 View all of the options:
 

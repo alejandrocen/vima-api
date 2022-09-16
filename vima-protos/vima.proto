@@ -36,8 +36,12 @@ message ConfigFindRequest {
     string id = 1;
 }
 
+message ConfigFindReponse {
+    optional ConfigObject config = 1;
+}
+
 service Configs {
     rpc Save (ConfigSaveRequest) returns (ConfigSaveResponse);
     rpc Search (ConfigSearchRequest) returns (ConfigSearchResponse);
-    rpc Find (ConfigFindRequest) returns (ConfigObject);
+    rpc Find (ConfigFindRequest) returns (ConfigFindReponse);
 }

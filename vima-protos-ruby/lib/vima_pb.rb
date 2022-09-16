@@ -34,6 +34,9 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
     add_message "vima.ConfigFindRequest" do
       optional :id, :string, 1
     end
+    add_message "vima.ConfigFindReponse" do
+      proto3_optional :config, :message, 1, "vima.ConfigObject"
+    end
   end
 end
 
@@ -44,4 +47,5 @@ module Vima
   ConfigSearchRequest = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("vima.ConfigSearchRequest").msgclass
   ConfigSearchResponse = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("vima.ConfigSearchResponse").msgclass
   ConfigFindRequest = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("vima.ConfigFindRequest").msgclass
+  ConfigFindReponse = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("vima.ConfigFindReponse").msgclass
 end

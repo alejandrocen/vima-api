@@ -7,7 +7,8 @@ module V1
 
       def call(params = {})
         config_id = params[:id]
-        config = @repository.find(config_id)
+        result = @repository.find(config_id)
+        config = result.config
         raise VimaMarketplace::Errors::ConfigNotFound, config_id unless config
 
         config

@@ -16,7 +16,7 @@ module Vima
 
       rpc :Save, ::Vima::ConfigSaveRequest, ::Vima::ConfigSaveResponse
       rpc :Search, ::Vima::ConfigSearchRequest, ::Vima::ConfigSearchResponse
-      rpc :Find, ::Vima::ConfigFindRequest, ::Vima::ConfigObject
+      rpc :Find, ::Vima::ConfigFindRequest, ::Vima::ConfigFindReponse
     end
 
     Stub = Service.rpc_stub_class

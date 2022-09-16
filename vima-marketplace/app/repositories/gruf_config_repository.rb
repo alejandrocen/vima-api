@@ -11,9 +11,6 @@ class GrufConfigRepository
 
   def find(id)
     @client.call(:Find, id: id).message
-  rescue Gruf::Client::Error
-    # TODO: Handle errors
-    nil
   end
 
   def search
